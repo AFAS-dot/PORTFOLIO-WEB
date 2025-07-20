@@ -1,0 +1,102 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #fff;
+      animation: fadeIn 1s ease-in;
+      overflow-x: hidden;
+    }
+
+    header, footer {
+      background: #1e293b;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #38bdf8;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #38bdf8, 0 0 40px #0284c7;
+      animation: glowPulse 3s infinite alternate ease-in-out;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    li {
+      background: #1e293b;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #0ea5e9;
+      box-shadow: 0 0 8px #0ea5e9;
+      transition: transform 0.2s ease;
+    }
+
+    li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 16px #0ea5e9;
+    }
+
+    footer {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes glowPulse {
+      0% {
+        box-shadow: 0 0 15px #0ea5e9, 0 0 30px #0284c7;
+      }
+      100% {
+        box-shadow: 0 0 30px #38bdf8, 0 0 60px #0ea5e9;
+      }
+    }
+    /* contactbutton*/
+    .contact-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #0ea5e9, 0 0 20px #0ea5e9;
+  transition: all 0.3s ease;
+  animation: popIn 0.6s ease-in-out;
+}
+
+.contact-button:hover {
+  background: #0ea5e9;
+  color: white;
+  transform: scale(1.05);
+}
